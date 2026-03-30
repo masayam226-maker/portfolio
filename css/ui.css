@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;    
+}
+#header .portfolio{
+    font-size: large;
+    
+}
+#header .portfolio a {
+    display: block;
+}
