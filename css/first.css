@@ -54,14 +54,16 @@ a:hover{
     margin-left: 40px;
 }
 .main-visual {
-    min-height: calc(100vh - 350px);
+	width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-     padding: 0 20px; 
+     padding: 40px 20px; 
 }
-
+.animation {
+	width: 60%;
+}
 .main-visual h2 {
     font-size: 60px; 
     font-weight: bold;
@@ -247,7 +249,15 @@ a:hover{
     margin-bottom: 40px;
 }
 
-
+@media (max-width: 1100px) {
+	.main-visual {
+	width: 100%;
+     padding: 40px 20px; 
+}
+.animation {
+	width: 90%;
+}
+}
 @media (max-width: 900px) {
     #creation {
         grid-template-columns: 1fr;
@@ -264,8 +274,12 @@ a:hover{
         max-width: 120px;
     }
     .main-visual {
-        min-height: calc(100vh - 120px); /* スマホでヘッダーが高くなる分調整 */
+     width: 150%;
+	 transform: translate(-15%, 0%)
     }
+	.animation {
+	width: 150%;
+}
        #creation {
         grid-template-columns: 1fr;
         gap: 40px;
